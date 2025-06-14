@@ -1,35 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Alphabetical Article Sorter</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background: url('background.jpg') no-repeat center center fixed;
-      background-size: cover;
-      margin: 0;
-      padding: 0;
-    }
-    ul#band {
-      list-style-type: square;
-      background-color: white;
-      max-width: 400px;
-      margin: 50px auto;
-      padding: 20px;
-      border-radius: 5px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.2);
-    }
-    li {
-      padding: 8px;
-      font-size: 18px;
-    }
-  </style>
+  <meta charset="UTF-8" />
+  <title>Modern Band Sorter</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-
-  <ul id="band"></ul>
-
+  <div class="container">
+    <h1>Alphabetical Band List</h1>
+    <ul id="band" class="band-list"></ul>
+  </div>
   <script src="script.js"></script>
 </body>
 </html>
