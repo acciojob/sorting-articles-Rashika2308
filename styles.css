@@ -1,26 +1,21 @@
 body {
-  background: linear-gradient(to right, #00c6ff, #0072ff);
-  font-family: 'Helvetica Neue', sans-serif;
-  padding: 30px;
-  color: #fff;
-}
-
-.container {
-  max-width: 500px;
-  margin: auto;
-  background: #fff;
+  font-family: sans-serif;
+  background-color: #f9f9f9;
+  text-align: center;
   padding: 20px;
-  color: #000;
-  border-radius: 10px;
-  box-shadow: 0 8px 16px rgba(0,0,0,0.3);
 }
 
-.band-list {
+ul#bands {
   list-style: none;
   padding: 0;
+  max-width: 400px;
+  margin: 0 auto;
 }
 
-.band-list li {
-  padding: 10px;
-  border-bottom: 1px solid #ddd;
+li {
+  padding: 8px;
+  background: #fff;
+  margin: 5px 0;
+  border: 1px solid #ddd;
+  border-radius: 4px;
 }

@@ -4,15 +4,15 @@ const bands = [
   'Counterparts', 'Oh, Sleeper', 'A Skylit Drive', 'Anywhere But Here', 'An Old Dog'
 ];
 
-function stripPrefix(title) {
-  return title.replace(/^(the |a |an )/i, '');
+function stripPrefix(name) {
+  return name.replace(/^(a |an |the )/i, '').trim();
 }
 
-bands.sort((a, b) => stripPrefix(a).localeCompare(stripPrefix(b)));
+const sorted = bands.sort((a, b) => stripPrefix(a).localeCompare(stripPrefix(b)));
 
-const ul = document.getElementById("band");
-bands.forEach(name => {
-  const li = document.createElement("li");
-  li.textContent = name;
+const ul = document.getElementById('bands'); // 🔧 ID should match HTML
+sorted.forEach(band => {
+  const li = document.createElement('li');
+  li.textContent = band;
   ul.appendChild(li);
 });
